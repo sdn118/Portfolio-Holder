@@ -1,6 +1,7 @@
 import {useState, useEffect, useRef} from "react";
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"]
+
+const colors = [{url: "assets/Capstone.jpg"}, "#00C49F", "#FFBB28", "#FFBB28"]
 const delay = 2500;
 
 function Slideshow () {
@@ -18,7 +19,7 @@ useEffect(() => {
   timeoutRef.current = setTimeout(
     () =>
       setIndex((prevIndex) =>
-        prevIndex === colors.length - 1 ? 0 : prevIndex),
+        prevIndex === colors.length - 1 ? 0 : prevIndex + 1),
     delay
   );
     return () =>{

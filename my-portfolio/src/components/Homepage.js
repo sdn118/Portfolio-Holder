@@ -10,7 +10,7 @@ import blacktype from "./../assets/blacktype.jpg"
 function Homepage () {
   return (
     <>
-      <img src={blacktype}  className="typing" alt="Black girl typing" />
+      <img src={blacktype} className="typing" alt="Black girl typing" />
       <Nav />
       <Header />
       <About />
