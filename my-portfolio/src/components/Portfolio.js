@@ -1,5 +1,4 @@
 import Slider from "./Slider";
-//import Slideshow from "./Slideshow";
 
 function Portfolio () {
   return(

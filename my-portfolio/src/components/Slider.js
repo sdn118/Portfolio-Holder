@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef} from "react";
+import {useState, useEffect} from "react";
 import Capstone from "../assets/Capstone.jpg"
 import Lucky from "../assets/Lucky.jpg"
 import Game from "../assets/Game.jpg"
@@ -44,7 +44,7 @@ function Slider ({ slides }) {
           return <div 
             key={index} 
             className=
-            {index == current ? "slide-card slide-card-active"
+            {index === current ? "slide-card slide-card-active"
                : "slide-card"}>
             <img src={image.image} alt="" />
             <div className="show-overlay">
@@ -55,11 +55,11 @@ function Slider ({ slides }) {
         })};
 
         <div className="slide-dots">
-          {slides.nao((_, index) => {
+          {slides.map((_, index) => {
             return <div
             key={index} 
             className={
-              index == current ? "slide-dots slide-dots-active"
+              index === current ? "slide-dots slide-dots-active"
                : "slide-dots"}
                onClick={() => setCurrent(index)}>
 
