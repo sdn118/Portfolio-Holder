@@ -1,10 +1,11 @@
-import Slideshow from "./Slideshow";
+import Slider from "./Slider";
+//import Slideshow from "./Slideshow";
 
 function Portfolio () {
   return(
     <section className="port">
     <h2>Portfolio</h2>
-    <Slideshow />
+    <Slider />
   </section>
   )
 };

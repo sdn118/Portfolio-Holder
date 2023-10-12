@@ -20,15 +20,15 @@ const slides =[
   }
 ]
 
-function Slider ({slides}) {
+function Slider ({ slides }) {
   return(
     <div className="slideshow">
       <div className="show-wrapper">
-        {slides.map((slides) =>{
+        {slides.map((image, index) =>{
           return <div key={index} className="slide-card">
-            <img src={image.imgage} alt="" />
+            <img src={image.image} alt="" />
             <div className="show-overlay">
-              <h2 className="slide-title">{imgage.title}</h2>
+              <h2 className="slide-title">{image.title}</h2>
             </div>
           </div>;
           
