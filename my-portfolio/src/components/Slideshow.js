@@ -1,16 +1,13 @@
 // src/App.js
 import ImageSlider from "./ImageSlider";
 import Capstone from "../assets/Capstone.jpg";
-import Lucky from "../assets/Lucky.jpg";
+import Shrub from "../assets/Shrub.jpg";
 import Game from "../assets/Game.jpg";
 
 function App() {
   const images = [
     Capstone,
-    Lucky,
-    Game,
-    Capstone,
-    Lucky,
+    Shrub,
     Game,
     // Add more image URLs here
   ];

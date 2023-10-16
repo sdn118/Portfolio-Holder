@@ -1,7 +1,7 @@
 import phone from "./../assets/phone.png";
 import email from "./../assets/email.png";
 
-function Header () {
+function Contact () {
   return(
     <section className="contact">
         <h2>Contact Me</h2>
@@ -21,4 +21,4 @@ function Header () {
   )
 };
 
-export default Header;
+export default Contact;
