@@ -1,75 +1,45 @@
-import {useState, useEffect, useRef} from "react";
-import Capstone from "../assets/Capstone.jpg"
-import Lucky from "../assets/Lucky.jpg"
-import Game from "../assets/Game.jpg"
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Capstone from "../assets/Capstone.jpg";
+import Lucky from "../assets/Lucky.jpg";
+import Game from "../assets/Game.jpg";
 
-const slides =[
-  {
-    image: {Capstone},
-    title: "Little Lemon",
-  },
-
-  {
-    image: {Lucky},
-    title: "Lucky Shrub",
-  },
-
-  {
-    image: {Game},
-    title: "Rock, Paper, Scissors",
-  }
-]
-const delay = 2500;
-
-function Slideshow() {
-  const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
-
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
-
-  useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () => 
-      setIndex((prevIndex) =>
-        prevIndex === slides.length - 1 ? 0 : prevIndex + 1),
-        delay);
-      
-      return () => {
-        resetTimeout();
-      }
-  }, [index]);
-
-  return (
-    <div className="slideshow">
-      <div className="slider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)`}}>
-        {slides.map((backgroundColor, index) => (
-          <div
-            className="slide"
-            key={index}
-            style={{backgroundColor}}
-            ></div>
-        ))}
-      </div>
-
-      <div className="showDots">
-        {slides.map((_, idx) => (
-          <div
-          key={idx}
-          className={`showDot${index === idx ? "active" : ""}`}
-          onClick={() => {
-            setIndex(idx);
-          }}
-          ></div>
-        ))}
-      </div>
-    </div>
-  );
+const slideshow = ({images}) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
 }
 
+function Slideshow () {
+  const images = [
+    Capstone,
+    Lucky,
+    Game,
+  ];
+
+
+
+
+return (
+  <div className="image-slider">
+    <Slider {...settings}>
+      {images.map((image, index) => (
+        <div key={index}>
+          <img src={image} alt={`Slide ${index}`} />
+        </div>
+      ))}
+    </Slider>
+  </div>
+);
+};
 
 export default Slideshow;
