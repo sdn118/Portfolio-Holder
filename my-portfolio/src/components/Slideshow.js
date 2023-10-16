@@ -1,6 +1,24 @@
 import {useState, useEffect, useRef} from "react";
+import Capstone from "../assets/Capstone.jpg"
+import Lucky from "../assets/Lucky.jpg"
+import Game from "../assets/Game.jpg"
 
-const colors = ["#088FE", "00C49F", "#FFBB28"];
+const slides =[
+  {
+    image: {Capstone},
+    title: "Little Lemon",
+  },
+
+  {
+    image: {Lucky},
+    title: "Lucky Shrub",
+  },
+
+  {
+    image: {Game},
+    title: "Rock, Paper, Scissors",
+  }
+]
 const delay = 2500;
 
 function Slideshow() {
@@ -18,7 +36,7 @@ function Slideshow() {
     timeoutRef.current = setTimeout(
       () => 
       setIndex((prevIndex) =>
-        prevIndex === colors.length - 1 ? 0 : prevIndex + 1),
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1),
         delay);
       
       return () => {
@@ -29,7 +47,7 @@ function Slideshow() {
   return (
     <div className="slideshow">
       <div className="slider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)`}}>
-        {colors.map((backgroundColor, index) => (
+        {slides.map((backgroundColor, index) => (
           <div
             className="slide"
             key={index}
@@ -39,7 +57,7 @@ function Slideshow() {
       </div>
 
       <div className="showDots">
-        {colors.map((_, idx) => (
+        {slides.map((_, idx) => (
           <div
           key={idx}
           className={`showDot${index === idx ? "active" : ""}`}
