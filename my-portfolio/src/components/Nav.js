@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Sheree_Nicholson_Resume from "../assets/Sheree_Nicholson_Resume.pdf"
 
 
 function Nav () {
@@ -13,7 +14,7 @@ return (
       <div className="hero-text">
         <h1>Hi there! My name is Sheree and 
           I'm a aspiring front-end developer</h1>
-        <button><Link to= "http://127.0.0.1:5501/assets/Sheree_Nicholson_Resume.pdf" target="_blank">Download Resume</Link></button>
+        <button><Link to= {require ("../assets/Sheree_Nicholson_Resume.pdf")} target="_blank">Download Resume</Link></button>
     </div>
   </nav>
 )
