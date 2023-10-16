@@ -40,7 +40,7 @@ function Slider ({ slides }) {
       setAutoPlay(true);
     }}>
       <div className="show-wrapper">
-        {slides.map((image, index) =>{
+        {slides && slides.map((image, index) =>{
           return <div 
             key={index} 
             className=
