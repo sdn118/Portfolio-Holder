@@ -328,6 +328,130 @@ button{
 
 }
 
+@media only screen and (max-width: 430px) {
+  /* styles for devices with a minimum screen width of 430px */
+  *{
+    margin: 0em;
+    padding: 0em;
+    font-family: Gayathri;
+  }
+
+  .container{
+    gap: 1.5em;
+    position: absolute;
+    top: 1%;
+    left: 58%;
+    font-size: small;
+  }
+
+  /* Hero */
+  .typing{
+    width: 5em;
+    height: 10em;
+  }
+
+  .hero-text{
+    top: 13%;
+    left: 20%;
+    color: white;
+    inline-size: 25em;
+    font-size: x-small;
+  }
+
+  button{
+    background-color: #85af66;
+    border: none;
+    border-radius: 5em;
+    padding: 1.5em;
+    font-size: x-small;
+    font-weight: bolder;
+  }
+
+  /* About */
+  .about{
+    font-size: x-small;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+  }
+
+  .about h2{
+    font-size: large;
+  }
+
+  /* Skills */
+  .skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .skills h2{
+    position: absolute;
+  }
+
+  .circle{
+    margin-top: 4em;
+    margin-right: -0.5em;
+    height: 3em;
+  }
+
+  .green-circle1 h3{
+    position: absolute;
+    top: 56em;
+    left: 7.5em;
+    color: white;
+    font-size: x-small;
+  }
+
+  .green-circle2 h3{
+    position: absolute;
+    top: 56em;
+    left: 15.2em;
+    color: white;
+    font-size: x-small;
+  }
+
+  .green-circle3 h3{
+    position: absolute;
+    top: 56em;
+    left: 23em;
+    color: white;
+    font-size: x-small;
+  }
+
+  .green-circle4 h3{
+    position: absolute;
+    top: 56em;
+    left: 29.2em;
+    color: white;
+    font-size: x-small;
+  }
+
+    /* Contact */
+  .contact-phone{
+    position: relative;
+    margin-left: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .contact-email{
+    margin-left: 7em;
+  }
+
+  .phone{
+    height: 2em;
+  }
+
+  .email{
+    height: 2em;
+  }
+
+}
+
 @media only screen and (max-width: 768px) {
   /* styles for devices with a minimum screen width of 768px */
   *{
