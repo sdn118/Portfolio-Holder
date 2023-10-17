@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import Sheree_Nicholson_Resume from "../assets/Sheree_Nicholson_Resume.pdf"
+
 
 
 function Nav () {
