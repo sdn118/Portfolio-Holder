@@ -53,10 +53,11 @@ button{
   font-weight: bolder;
 }
 
-.button link{
+button a{
   text-decoration: none;
   color: white;
 }
+
 
 /* About */
 .about{
