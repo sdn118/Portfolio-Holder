@@ -7,16 +7,18 @@
 /* Nav */
 .container{
   display: flex;
-  flex-direction: row;
+  justify-content: end;
   gap: 5em;
-  position: absolute;
-  top: 5%;
-  left: 75%;
+  padding-top: 2em;
+  padding-right: 2em;
+  background-color: #49702d;
 }
 
 .container a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .container li {
@@ -25,32 +27,42 @@
 
 /* Hero */
 .typing{
+  display: flex;
+
   width: 100%;
   height: 45em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  filter: contrast(75%);
 }
 
 .hero-text{
-  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -12.1em;
+  left: 16em;
   text-align: center;
-  position: absolute;
-  top: 38%;
-  left: 35%;
   color: white;
   inline-size: 25em;
-  font-size: x-large;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 button{
-  background-color: #85af66;
+  background-color: #49702d;
   border: none;
-  border-radius: 5em;
-  padding: 1.5em;
-  font-size: large;
+  border-radius: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 7em;
+  margin-right: 7em;
+  font-size: 0.85em;
   font-weight: bolder;
+  
+  margin-top: 2em;
 }
 
 button:active{
@@ -65,13 +77,15 @@ button a{
 
 
 /* About */
+.me{
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1em;
+}
 .about{
   display: flex;
-  flex-direction: column;
   text-align: center;
-  margin-top: 5em;
-  margin-bottom: 5em;
-  margin-inline: 25em;
+  font-size: 1.5em;
 }
 
 .about p{
@@ -79,21 +93,27 @@ button a{
   line-height: 1.5em;
 }
 
-/* Skills */
-.skills{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5em;
+.about h2{
+  margin-left: 2em;
 }
 
-.skills h2{
-  position: absolute;
+/* Skills */
+.skill-circle{
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  font-size: 1.2em;
 }
+
+.skills{
+  text-align: center;
+  font-size: 3em;
+  padding-top: 3em;
+}
+
 
 .circle{
   margin-top: 4em;
-  margin-right: 5em;
   height: 8em;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,31 +121,31 @@ button a{
 }
 
 .green-circle1 h3{
-  position: absolute;
-  top: 62.5em;
-  left: 23.2em;
-  color: white
+  color: white;
+  position: relative;
+  top: -4.2em;
+  left: 2.3em;
 }
 
 .green-circle2 h3{
-  position: absolute;
-  top: 62.5em;
-  left: 38.7em;
-  color: white
+  color: white;
+  position: relative;
+  top: -4.2em;
+  left: 2.5em;
 }
 
 .green-circle3 h3{
-  position: absolute;
-  top: 62.5em;
-  left: 54.5em;
-  color: white
+  color: white;
+  position: relative;
+  top: -4.2em;
+  left: 2.8em;
 }
 
 .green-circle4 h3{
-  position: absolute;
-  top: 62.5em;
-  left: 68.8em;
-  color: white
+  color: white;
+  position: relative;
+  top: -4.2em;
+  left: 1.8em;
 }
 
 /* Portfolio */
@@ -133,6 +153,7 @@ button a{
   text-align: center;
   margin-top: 4em;
   margin-bottom: 2em;
+  font-size: 3em;
 }
 
 /* Slideshow */
@@ -150,59 +171,47 @@ button a{
   max-width: 100%;
   height: auto;
   margin: auto;
-  border-radius: 1.5em;
+  border-radius: 0.5em;
 }
-
-
 
 
 /* Contact */
 .contact {
-  text-align: center;
-  margin-top: 7em;
-}
-
-.c-content{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
-  line-height: 1.5em;
+  padding-top: 7em;
+  padding-bottom: 4em;
+  font-size: 2em;
 }
 
+
 .contact-phone{
-  position: absolute;
-  margin-left: 48em;
+  font-weight: 700;
 }
 
 .contact-email{
-  position: absolute;
-  margin-left: 60em;
-}
-
-.phone{
-  height: 3em;
-}
-
-.email{
-  height: 3em;
+  font-weight: 700;
 }
 
 /* Footer */
 .bottom-container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 5em;
-    margin-top: 10em;
+    padding-top: 1em;
+    background-color: #49702d;
+    font-size: 2em;
+    font-weight: 700;
   }
 
 
 
 .bottom-container a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .bottom-container li {
@@ -219,117 +228,133 @@ button a{
   }
 
   .container{
-    gap: 1.5em;
-    position: absolute;
-    top: 1%;
-    left: 58%;
     font-size: small;
+    font-weight: bolder;
+    gap: 3em;
+    justify-content: center;
+    padding-left: 2em;
   }
 
   /* Hero */
   .typing{
     width: 25em;
     height: 15em;
+    position: relative;
+    filter: contrast(65%);
   }
 
   .hero-text{
-    top: 13%;
-    left: 20%;
-    color: white;
-    inline-size: 25em;
-    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 3em;
+    top: -10.5em;
+    font-size: small;
   }
-  
+
   button{
-    background-color: #85af66;
-    border: none;
-    border-radius: 5em;
-    padding: 1.5em;
-    font-size: x-small;
-    font-weight: bolder;
+    position: relative;
+    font-size: small;
+    font-weight: 700;
+    margin-top: .5em;
   }
 
   /* About */
-  .about{
-    font-size: x-small;
-    text-align: center;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-top: 2em;
+  .me{
+    margin-top: -2.5em;
+    font-size: 1.8em;
   }
 
-  .about h2{
-    font-size: large;
+  .about{
+    padding-left: 5em;
+    padding-right: 2.5em;
+    font-size: .85em;
+    font-weight: bold;
+    line-height: 1.5em;
   }
 
   /* Skills */
-  .skills{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2em;
+  .skill-circle{
+    gap: -35em;
+    
   }
 
-  .skills h2{
-    position: absolute;
+  .skills{
+    font-size: 1.8em;
+    margin-bottom: -1em;
   }
 
   .circle{
-    margin-top: 4em;
-    margin-right: -0.5em;
-    height: 3em;
+    height: 3.8em;
+    position: relative;
   }
 
   .green-circle1 h3{
-    position: absolute;
-    top: 56em;
-    left: 7.5em;
-    color: white;
-    font-size: x-small;
+    position: relative;
+    top: -3.2em;
+    left: .95em;
+    font-size: medium;
+    font-weight: bolder;
   }
 
   .green-circle2 h3{
-    position: absolute;
-    top: 56em;
-    left: 15.2em;
-    color: white;
-    font-size: x-small;
+    position: relative;
+    top: -3.2em;
+    left: 1.3em;
+    font-size: medium;
+    font-weight: bolder;
   }
 
   .green-circle3 h3{
-    position: absolute;
-    top: 56em;
-    left: 23em;
-    color: white;
-    font-size: x-small;
+    position: relative;
+    top: -3.2em;
+    left: 1.7em;
+    font-size: medium;
+    font-weight: bolder;
   }
 
   .green-circle4 h3{
-    position: absolute;
-    top: 56em;
-    left: 29.2em;
-    color: white;
-    font-size: x-small;
+    position: relative;
+    top: -3.2em;
+    left: .65em;
+    font-size: medium;
+    font-weight: bolder;
   }
 
-    /* Contact */
+  /* Portfolio */
+  .port h2{
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  /* Contact */
+  .contact{
+    font-size: 1.3em;
+    padding-top: -1em;
+    padding-bottom: -1em;
+  }
+
   .contact-phone{
-    position: relative;
-    margin-left: 0.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: medium;
   }
 
   .contact-email{
-    margin-left: 7em;
+    font-size: medium;
   }
 
   .phone{
-    height: 2em;
+    height: 3.5em;
   }
 
   .email{
-    height: 2em;
+    height: 3.5em;
+  }
+
+  /* Footer */
+  .bottom-container{
+    font-size: large;
+    gap: 3em;
+    padding-bottom: 1em;
   }
 
 }
@@ -343,122 +368,52 @@ button a{
   }
 
   .container{
-    gap: 1.5em;
-    position: absolute;
-    top: 2%;
-    left: 72%;
     font-size: medium;
+    gap: 2em;
+    margin-right: -1em;
   }
 
   /* Hero */
   .typing{
-    width: 55em;
-    height: 25em;
+    position: relative;
+    width: 48em;
+    height: 30em;
+    filter: contrast(55%);
   }
 
   .hero-text{
-    top: 18%;
-    left: 30%;
-    color: white;
-    inline-size: 25em;
-    font-size: medium;
+    position: relative;
+    top: -13.9em;
+    left: 8em;
+    font-size: larger;
   }
-  
+
   button{
-    background-color: #85af66;
-    border: none;
-    border-radius: 5em;
-    padding: 1.5em;
-    font-size: medium;
-    font-weight: bolder;
-  }
+  font-size: 1em;
+  font-weight: bolder;
+}
 
-  /* About */
-  .about{
-    font-size: medium;
-    text-align: center;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-top: 2em;
-  }
 
-  .about h2{
-    font-size: x-large;
-  }
+/* About */
+.me{
+  margin-top: -1em;
+}
 
-  /* Skills */
-  .skills{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2em;
-  }
+.about{
+  margin-top: -1em;
+  padding: 2em;
+}
 
-  .skills h2{
-    position: absolute;
-  }
+/* Contact */
+.contact{
+  font-size: larger;
+  margin-bottom: 15em;
+}
 
-  .circle{
-    margin-top: 4em;
-    margin-right: -0.5em;
-    height: 5em;
-  }
-
-  .green-circle1 h3{
-    position: absolute;
-    top: 51.5em;
-    left: 13.2em;
-    color: white;
-    font-size: medium;
-  }
-
-  .green-circle2 h3{
-    position: absolute;
-    top: 51.5em;
-    left: 20em;
-    color: white;
-    font-size: medium;
-  }
-
-  .green-circle3 h3{
-    position: absolute;
-    top: 51.5em;
-    left: 26.8em;
-    color: white;
-    font-size: medium;
-  }
-
-  .green-circle4 h3{
-    position: absolute;
-    top: 51.5em;
-    left: 32.4em;
-    color: white;
-    font-size: medium;
-  }
-
-    /* Contact */
-  .contact-phone{
-    position: absolute;
-    margin-left: 14em;
-    margin-bottom: 0.5em;
-  }
-
-  .contact-email{
-    position: absolute;
-    margin-left: 25em;
-  }
-
-  .phone{
-    height: 4em;
-  }
-
-  .email{
-    height: 4em;
-  }
-
-  .bottom-container{
-    font-size: large;
-  }
+.bottom-container{
+  margin-top: -8em;
+  padding-bottom: 1em;
+}
 
 }
 

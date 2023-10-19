@@ -2,8 +2,10 @@ import greencircle from "./../assets/greencircle.png";
 
 function Skills () {
   return(
-    <section className="skills">
-        <h2>My skills</h2>
+
+  <>
+    <h2 className="skills">My skills</h2>
+    <section className="skill-circle">
         <div className="green-circle1">
           <img src={greencircle} className="circle" alt="circle" />
         <h3>HTML</h3>
@@ -25,6 +27,7 @@ function Skills () {
         </div>
 
       </section>
+      </>
   )
 };
 
