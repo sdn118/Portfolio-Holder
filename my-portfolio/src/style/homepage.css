@@ -238,7 +238,7 @@ button a{
   /* Hero */
   .typing{
     width: 25em;
-    height: 15em;
+    height: 15vw;
     position: relative;
     filter: contrast(65%);
   }
