@@ -219,7 +219,7 @@ button a{
 }
 
 /*Media*/
-@media only screen and (max-width: 390px) {
+@media all and (max-width: 480px) {
     /* styles for devices with a minimum screen width of 390px */
   *{
     margin: 0em;
@@ -230,15 +230,16 @@ button a{
   .container{
     font-size: small;
     font-weight: bolder;
-    gap: 3em;
+    gap: 4em;
     justify-content: center;
-    padding-left: 2em;
+    padding-left: 4em;
+
   }
 
   /* Hero */
   .typing{
-    width: 25em;
-    height: 15vw;
+    width: 24.35em;
+    height: 15em;
     position: relative;
     filter: contrast(65%);
   }
@@ -359,7 +360,7 @@ button a{
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
   /* styles for devices with a minimum screen width of 768px */
   *{
     margin: 0em;
@@ -376,7 +377,7 @@ button a{
   /* Hero */
   .typing{
     position: relative;
-    width: 48em;
+    width: 49em;
     height: 30em;
     filter: contrast(55%);
   }
