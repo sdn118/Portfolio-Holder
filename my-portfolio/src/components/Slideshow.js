@@ -3,7 +3,7 @@ import ImageSlider from "./ImageSlider";
 import Capstone from "../assets/Capstone.jpg";
 import Shrub from "../assets/Shrub.jpg";
 import Game from "../assets/Game.jpg";
-import amazon from "../assets/amazon.jpg;"
+import amazon from "../assets/amazon.jpg";
 
 function App() {
   const images = [
