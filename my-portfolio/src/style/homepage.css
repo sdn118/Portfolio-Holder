@@ -1,151 +1,208 @@
 *{
-  margin: 0em;
+  margin: 0em auto;
   padding: 0em;
   font-family: Gayathri;
+  transition: .2s linear;
 }
 
-/* Nav */
-.container{
-  display: flex;
-  justify-content: end;
-  gap: 5em;
-  padding-top: 2em;
-  padding-right: 2em;
-  background-color: #49702d;
+:root{
+  --green: #3C6D3B;
+  --white: #fff;
+  --black: #3d3d3d
 }
 
-.container a {
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+a{
   text-decoration: none;
-  color: white;
+  color: var(--white);
+}
+
+section{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.head{
+  background-color: #3C6D3B;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.head .nav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.head .welcome{
+  font-size: 3.5rem;
+  margin-left: 2rem;
+}
+
+.head .navbar a{
+  font-size: 3.5rem;
+  margin-left: 2rem;
+}
+
+.head .navbar a:hover{
+  color: var(--black);
+}
+
+#menu-btn{
+  cursor: pointer;
+  color: var(--white);
+  font-size: 2.5rem;
+  display: none;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: var(--green);
+  cursor: pointer;
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 1.5em;
+  padding: 1rem 3rem;
 }
 
-.container li {
-  list-style: none;
+.btn:hover{
+  background-color: #fff;
+  color: #3C6D3B;
 }
 
-/* Hero */
-.typing{
-  display: flex;
+.home{
+  margin-top: 6rem;
+}
 
+.home .start{
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+}
+
+.home .start .content{
+  flex: 1 1 40rem;
+  text-align: center;
+  position: relative;
+  top: -33rem;
+}
+
+.home h2{
+  color: white;
+  font-size: 3.5rem;
+}
+
+
+.home .start .image{
+  flex: 1 1 40rem;
+}
+
+
+.home .start .image img{
   width: 100%;
-  height: 45em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  filter: contrast(75%);
+  filter: contrast(60%);
 }
 
-.hero-text{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: -12.1em;
-  left: 16em;
-  text-align: center;
-  color: white;
-  inline-size: 25em;
-  font-size: 2em;
-  font-weight: bolder;
-}
-
-button{
-  background-color: #49702d;
-  border: none;
-  border-radius: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-left: 7em;
-  margin-right: 7em;
-  font-size: 0.85em;
-  font-weight: bolder;
-  
-  margin-top: 2em;
-}
-
-button:active{
-  background-color: purple;
-  color: white;
-}
-
-button a{
-  text-decoration: none;
-  color: white;
-}
-
-
-/* About */
-.me{
-  text-align: center;
-  font-size: 3em;
-  margin-top: 1em;
-}
 .about{
-  display: flex;
+  margin-top: -8rem;
+  line-height: 1.5;
+}
+
+.about .content h2{
   text-align: center;
-  font-size: 1.5em;
+  font-size: 4.5rem;
+}
+
+.about .content p{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .about p{
-  margin-top: 2em;
-  line-height: 1.5em;
+  padding: 1.5rem;
 }
 
-.about h2{
-  margin-left: 2em;
-}
-
-/* Skills */
-.skill-circle{
-  display: flex;
-  justify-content: center;
-  gap: 1.5em;
-  font-size: 1.2em;
-}
-
-.skills{
+ .title{
   text-align: center;
-  font-size: 3em;
-  padding-top: 3em;
+  margin-bottom: 5rem;
+  font-size: 4.5rem;
+}
+
+.skills .contain{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.skills .contain .circles{
+  background-color: var(--green);
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.skills .contain h2{
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.port{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 3.5rem;
 }
 
 
-.circle{
-  margin-top: 4em;
-  height: 8em;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.contact .tact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.green-circle1 h3{
-  color: white;
-  position: relative;
-  top: -4.2em;
-  left: 2.3em;
+.contact .tact h2{
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
 
-.green-circle2 h3{
-  color: white;
-  position: relative;
-  top: -4.2em;
-  left: 2.5em;
+.contact .title{
+  margin-bottom: .5rem;
 }
 
-.green-circle3 h3{
-  color: white;
-  position: relative;
-  top: -4.2em;
-  left: 2.8em;
+.contact .tact .phone img{
+  margin-inline: 6rem;
 }
 
-.green-circle4 h3{
-  color: white;
-  position: relative;
-  top: -4.2em;
-  left: 1.8em;
+.contact .tact .email img{
+  margin-inline: 12.5rem;
+}
+
+.contact .tact img:hover{
+  background-color: var(--black);
+  border-radius: 2.5rem;
+  cursor: pointer;
 }
 
 /* Portfolio */
@@ -175,246 +232,75 @@ button a{
 }
 
 
-/* Contact */
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding-top: 7em;
-  padding-bottom: 4em;
-  font-size: 2em;
-}
+/* media queries */
 
+@media (max-width:768px){
 
-.contact-phone{
-  font-weight: 700;
-}
-
-.contact-email{
-  font-weight: 700;
-}
-
-/* Footer */
-.bottom-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5em;
-    padding-top: 1em;
-    background-color: #49702d;
-    font-size: 2em;
-    font-weight: 700;
+  #menu-btn{
+    display: inline-block;
   }
 
-
-
-.bottom-container a {
-  text-decoration: none;
-  color: white;
-}
-
-.bottom-container li {
-  list-style: none;
-}
-
-/*Media*/
-@media all and (max-width: 480px) {
-    /* styles for devices with a minimum screen width of 390px */
-  *{
-    margin: 0em;
-    padding: 0em;
-    font-family: Gayathri;
+  #menu-btn.fa-times{
+    transform: rotate(180deg);
   }
 
-  .container{
-    font-size: small;
-    font-weight: bolder;
-    gap: 4em;
-    justify-content: center;
-    padding-left: 4em;
-
+  .head .nav .navbar{
+    position: absolute;
+    top: 99%; left: 0; right: 0;
+    border-top: .1rem solid var(--white);
+    border-bottom: .1rem solid var(--white);
+    background-color: var(--green);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-  /* Hero */
-  .typing{
-    width: 24.35em;
-    height: 15em;
-    position: relative;
-    filter: contrast(65%);
+  .head .nav .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
-  .hero-text{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 3em;
-    top: -10.5em;
-    font-size: small;
+  .head .nav .navbar a{
+    display: block;
+    margin: 2rem;
   }
 
-  button{
-    position: relative;
-    font-size: small;
-    font-weight: 700;
-    margin-top: .5em;
+  .home .start .content h2{
+    font-size: 6rem;
   }
 
-  /* About */
-  .me{
-    margin-top: -2.5em;
-    font-size: 1.8em;
-  }
-
-  .about{
-    padding-left: 5em;
-    padding-right: 2.5em;
-    font-size: .85em;
-    font-weight: bold;
-    line-height: 1.5em;
-  }
-
-  /* Skills */
-  .skill-circle{
-    gap: -35em;
-    
-  }
-
-  .skills{
-    font-size: 1.8em;
-    margin-bottom: -1em;
-  }
-
-  .circle{
-    height: 3.8em;
-    position: relative;
-  }
-
-  .green-circle1 h3{
-    position: relative;
-    top: -3.2em;
-    left: .95em;
-    font-size: medium;
-    font-weight: bolder;
-  }
-
-  .green-circle2 h3{
-    position: relative;
-    top: -3.2em;
-    left: 1.3em;
-    font-size: medium;
-    font-weight: bolder;
-  }
-
-  .green-circle3 h3{
-    position: relative;
-    top: -3.2em;
-    left: 1.7em;
-    font-size: medium;
-    font-weight: bolder;
-  }
-
-  .green-circle4 h3{
-    position: relative;
-    top: -3.2em;
-    left: .65em;
-    font-size: medium;
-    font-weight: bolder;
-  }
-
-  /* Portfolio */
-  .port h2{
-    font-size: 1.8em;
-    font-weight: bold;
-  }
-
-  /* Contact */
-  .contact{
-    font-size: 1.3em;
-    padding-top: -1em;
-    padding-bottom: -1em;
-  }
-
-  .contact-phone{
-    font-size: medium;
-  }
-
-  .contact-email{
-    font-size: medium;
-  }
-
-  .phone{
-    height: 3.5em;
-  }
-
-  .email{
-    height: 3.5em;
-  }
-
-  /* Footer */
-  .bottom-container{
-    font-size: large;
-    gap: 3em;
-    padding-bottom: 1em;
+  .home .start .image img{
+    object-fit: contain;
   }
 
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1024px) {
-  /* styles for devices with a minimum screen width of 768px */
-  *{
-    margin: 0em;
-    padding: 0em;
-    font-family: Gayathri;
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
   }
 
-  .container{
-    font-size: medium;
-    gap: 2em;
-    margin-right: -1em;
+  .home .start .content h2{
+    font-size: 8rem;
   }
 
-  /* Hero */
-  .typing{
-    position: relative;
-    width: 49em;
-    height: 30em;
-    filter: contrast(55%);
+  .home .start .image img{
+    object-fit: contain;
   }
 
-  .hero-text{
-    position: relative;
-    top: -13.9em;
-    left: 8em;
-    font-size: larger;
+}
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
   }
 
-  button{
-  font-size: 1em;
-  font-weight: bolder;
-}
+  .home .start .content h2{
+    font-size: 5rem;
+  }
 
-
-/* About */
-.me{
-  margin-top: -1em;
-}
-
-.about{
-  margin-top: -1em;
-  padding: 2em;
-}
-
-/* Contact */
-.contact{
-  font-size: larger;
-  margin-bottom: 15em;
-}
-
-.bottom-container{
-  margin-top: -8em;
-  padding-bottom: 1em;
-}
+  .head{
+    font-size: 3rem;
+  }
 
 }
 

@@ -3,20 +3,23 @@ import email from "./../assets/email.png";
 
 function Contact () {
   return(
-    <section className="contact">
-        <h2>Contact Me</h2>
-        
-          <div className="contact-phone">
-            <img src={phone} className="phone" alt="telephone icon" />
-            <h4>Phone:</h4>
-            <p>(734) 865-0876</p>
+    <section class="contact" id="contact">
+
+        <h2 class="title">My Info</h2>
+        <div class="tact">
+
+          <div class="phone">
+            <img src={phone} alt=""/>
+            <h2>Cell: <span>(734) 865-0876</span></h2>
           </div>
 
-        <div className="contact-email">
-          <img src={email} className="email" alt="email icon" />
-          <h4>Email:</h4>
-          <p>sdnicholson8@gmail.com</p>
+          <div class="email">
+            <img src={email} alt=""/>
+            <h2>Email: <span>sdnicholson8@gmail.com</span></h2>
+          </div>
+
         </div>
+
       </section>
   )
 };

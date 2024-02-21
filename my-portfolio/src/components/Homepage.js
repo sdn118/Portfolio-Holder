@@ -1,4 +1,5 @@
-import Nav from "./Nav";
+import Header from "./Header";
+import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
 import Skills from "./Skills";
@@ -11,7 +12,8 @@ function Homepage () {
   return (
     <>
 
-      <Nav />
+      <Header  />
+      <Home  />
       <About />
       <Skills />
       <Portfolio />
