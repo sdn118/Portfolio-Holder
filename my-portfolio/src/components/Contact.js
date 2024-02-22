@@ -3,17 +3,17 @@ import email from "./../assets/email.png";
 
 function Contact () {
   return(
-    <section class="contact" id="contact">
+    <section className="contact" id="contact">
 
-        <h2 class="title">My Info</h2>
-        <div class="tact">
+        <h2 className="title">My Info</h2>
+        <div className="tact">
 
-          <div class="phone">
+          <div className="phone">
             <img src={phone} alt=""/>
             <h2>Cell: <span>(734) 865-0876</span></h2>
           </div>
 
-          <div class="email">
+          <div className="email">
             <img src={email} alt=""/>
             <h2>Email: <span>sdnicholson8@gmail.com</span></h2>
           </div>

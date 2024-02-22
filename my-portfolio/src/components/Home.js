@@ -7,16 +7,16 @@ import blacktype from './../assets/blacktype.jpg';
 
 function Home () {
 return (
-  <section class="home" id="home">
-        <div class="start">
+  <section className="home" id="home">
+        <div className="start">
 
-          <div class="image">
+          <div className="image">
             <img src={blacktype} alt="black girl typing"/>
           </div>
 
-          <div class="content">
+          <div className="content">
             <h2>Hi there! My name is Sheree Nicholson and I'm an aspiring developer.</h2>
-            <Link href="assets/Sheree_Nicholson_Resume.pdf" target="_blank" class="btn">Download Resume</Link>
+            <Link href="assets/Sheree_Nicholson_Resume.pdf" target="_blank" className="btn">Download Resume</Link>
           </div>
 
         </div>
